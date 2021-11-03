@@ -265,7 +265,7 @@ display: block;
     letter-spacing: 3px;
   }
   .main-body > p{
-    width: 25rem;
+    width: 90%;
   }
   .main-body > .line{
     border: 1px solid gray;
