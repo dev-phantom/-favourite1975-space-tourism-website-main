@@ -335,4 +335,8 @@ display: block;
       height: calc(100vh - 50px);
       overflow-y: auto;
     }
+    .main > img{
+        width: 90%;
+        height: 90%;
+      }
 }
