@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+  font-family: myfont;
+  src: url(/starter-code/fonts/NotoSerif-Regular.ttf);
+}
+body{
+    background: url(/starter-code/assets/home/background-home-desktop.jpg),center top;
+    color: white;
+}
+  .nav {
+    height: 50px;
+    width: 100%;
+    margin-top:2rem;
+    margin-bottom: 1rem;
+    background-color: unset;
+    position: relative;
+  }
+
+  .nav > .nav-header {
+    display: inline;
+  }
+
+  .nav > .nav-header > .nav-title {
+    margin-left: 20px;
+    float: left;
+  }
+  .nav > .nav-header > .nav-title  > img{
+      width: 2rem;
+      height: 2rem;
+  }
+  .nav > .nav-header > .line{
+    border: 1px solid gray;
+    width: 30vw;
+    opacity: .5;
+    margin-top: 1.5rem;
+    margin-left: 4rem;
+    display: inline-flex;
+  }
+  .nav > .nav-btn {
+    display: none;
+  }
+
+  .nav > .nav-links {
+    backdrop-filter: blur(10px) saturate(200%);
+    -webkit-backdrop-filter: blur(10px) saturate(200%);
+    background-color: rgba(11, 13, 26, 0.54);
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  .nav > .nav-links > ul li a{
+    display: block;
+    padding: 4px 8px;
+    width: 9rem;
+    color: #fff;
+    line-height: 40px;
+    font-size: 18px;
+    text-decoration: none;
+
+  }
+  .nav > .nav-links > ul{
+    padding: 0;
+    margin-top: 5px;
+    list-style: none;
+    position: relative;
+  }
+  .nav > .nav-links > ul li{
+    display: inline-block;
+  }
+  .nav > .nav-links > ul li:hover{
+    border-bottom: 2px solid white;
+    transition: all ease-in .5s;
+    width: fit-content;
+  }
+  .nav > #nav-check {
+    display: none;
+  }
+  .main{
+    display: inline-flex;
+    margin-top: 7rem;
+    margin-left: 8rem;
+    font-size: 20px;
+    min-height: 90%;
+  }
+  .main > .main-info{
+    display: block;
+    width: 30rem;
+  }
+  .main > .main-info>.main-info-head{
+    font-size: 2rem;
+    word-spacing: 3px;
+  }
+  .space{
+    font-size: 10rem;
+    margin: 1rem 0;
+  }
+  .circle{
+    width: 10rem;
+    background-color: white;
+    border-radius: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15rem;
+    margin-top: 10rem;
+  }
+  .circle > .explore{
+    color: rgba(11, 13, 26);
+    font-size: 2rem;
+  }
+  @media screen and (max-width:768px){
+    body{
+      background: url(/starter-code/assets/home/background-home-tablet.jpg),center top;
+      color: white;
+  }
+  .nav > .nav-links{
+    width: 100%;
+    float: none;
+    text-align: center;
+display: block;
+  }
+    .nav{
+      margin-top: 2px;
+      width: 100%;
+      background-color: unset;
+      position: relative;
+    }
+    .nav > .nav-header > .line{
+      display: none;
+    }
+    .nav > .nav-header > .nav-title  > img{
+      width: 3rem;
+      height: 3rem;
+      margin:5px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .nav > .nav-links > ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav > .nav-header > .nav-title {
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: none;
+  }
+  .nav > .nav-links > ul li a{
+    width: 100%;
+    color: #fff;
+
+    font-size: 18px;
+    text-decoration: none;
+
+  }
+  .nav > .nav-links > ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    list-style: none;
+  
+  }
+  .main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:2rem;
+
+  }
+  .main > .main-info{
+    text-align: center;
+  }
+  .circle{
+    width: 10rem;
+    background-color: white;
+    border-radius: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+  }
+
+  }
+  @media screen and (max-width:480px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav{
+      width: 100%;
+      position: fixed;
+       z-index: 99;
+    }
+    .nav-title{
+      float: left;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: unset;
+    }
+    .nav > .nav-btn > label > span{
+      display: block;
+      width: 26px;
+      height: 10px;
+      border-top: 2px solid #fff;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      overflow-y: hidden;
+      overflow-x: none;
+      top: 50px;
+      left: 0px;
+      display: inline-block;
+      width: 100%;
+      background-color: #062048;
+      height: 0px;
+      transition: all 0.3s ease-in;
+    }
+    .nav > .nav-links > ul{
+      display: inline-block;
+    }
+    .nav > .nav-links > ul li a {
+
+      width: 100%;
+      text-align: center;
+      border-radius: 1.5rem;
+      color: #fff;
+    }
+    .nav > .nav-links > ul li a:hover{
+      color: #fff;
+      background-color: #FFAC41;
+      transition: all ease-in-out 1s;
+    }
+  .nav > .nav-header > .nav-title {
+    float: left;
+  }
+  .nav > .nav-header > .nav-title  > img{
+      width: 2rem;
+      height: 2rem;
+  }
+  a{
+    outline: none;
+  }
+      .nav > .nav-links > ul li{
+        display: inline;
+        margin-bottom: 20px;
+        padding: 0;
+        background-color: unset;
+
+      }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+    .main{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 15px;
+      margin:2rem;
+  
+    }
+    .main > .main-info{
+      text-align: center;
+      width: 90%;
+      margin-top: 2rem;
+    }
+    .main > .main-info>.main-info-head{
+      font-size: 1.5rem;
+    }
+    .space{
+      font-size: 5rem;
+      margin: 1rem 0;
+    }
+  }

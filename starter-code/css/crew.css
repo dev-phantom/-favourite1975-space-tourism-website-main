@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(/starter-code/assets/crew/background-crew-desktop.jpg),center top;
+    color: white;
+}
+  .nav {
+    height: 50px;
+    width: 100%;
+    margin-top:1rem;
+    margin-bottom: 1rem;
+    background-color: unset;
+    position: relative;
+  }
+
+  .nav > .nav-header {
+    display: inline;
+  }
+
+  .nav > .nav-header > .nav-title {
+    margin-left: 20px;
+    float: left;
+  }
+  .nav > .nav-header > .nav-title  > img{
+      width: 2rem;
+      height: 2rem;
+  }
+  .nav > .nav-header > .line{
+    border: 1px solid gray;
+    width: 30vw;
+    opacity: .5;
+    margin-top: 1.5rem;
+    margin-left: 4rem;
+    display: inline-flex;
+  }
+  .nav > .nav-btn {
+    display: none;
+  }
+
+  .nav > .nav-links {
+    backdrop-filter: blur(10px) saturate(200%);
+    -webkit-backdrop-filter: blur(10px) saturate(200%);
+    background-color: rgba(232, 227, 231, 0.11);
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  .nav > .nav-links > ul li a{
+    display: block;
+    padding: 4px 8px;
+    width: 9rem;
+    color: #fff;
+    line-height: 40px;
+    font-size: 18px;
+    text-decoration: none;
+
+  }
+  .nav > .nav-links > ul{
+    padding: 0;
+    margin-top: 5px;
+    list-style: none;
+    position: relative;
+  }
+  .nav > .nav-links > ul li{
+    display: inline-block;
+  }
+  .nav > .nav-links > ul li:hover{
+    border-bottom: 2px solid white;
+    transition: all ease-in .5s;
+    width: fit-content;
+  }
+  .nav > #nav-check {
+    display: none;
+  }
+  .main{
+      display: flex;
+      width: 100%;
+  }
+  .main-body{
+      display: block;
+      margin-left: 5rem;
+  }
+  .main-body > .main-body-head{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+  .main-body > .main-body-head > span{
+    color: gray;
+  }
+  .main-body > .main-body-post{
+    color:gray;
+    text-transform: uppercase;
+    margin-top: 5rem;
+    font-size: 25px;
+  }
+  .main-body > .main-body-name{
+    font-size: 45px;
+    text-transform: uppercase;
+  }
+  .main-body > p{
+      width: 25rem;
+      margin-top: 1rem;
+  }
+  .main-body > .crew-nav{
+    display: flex;
+    margin-top: 10rem;
+  }
+  .main-body > .crew-nav > a > button{
+    margin-left: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: none;
+    outline: none;
+    background-color: gray;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .main-body > .crew-nav > a > .act{
+    border: 10px solid white;
+  }
+  .main > img{
+    margin-top: 5.5rem;
+    margin-left: 1rem;
+    width: 30rem;
+    height: 30rem;
+  }
+@media screen and (max-width:768px){
+    .nav > .nav-links{
+      width: 100%;
+      float: none;
+      text-align: center;
+  display: block;
+    }
+      .nav{
+        margin-top: 2px;
+        width: 100%;
+        background-color: unset;
+        position: relative;
+      }
+      .nav > .nav-header > .line{
+        display: none;
+      }
+      .nav > .nav-header > .nav-title  > img{
+        width: 3rem;
+        height: 3rem;
+        margin:5px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav > .nav-links > ul li{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nav > .nav-header > .nav-title {
+      margin:0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      float: none;
+    }
+    .nav > .nav-links > ul li a{
+      width: 100%;
+      color: #fff;
+      font-size: 18px;
+      text-decoration: none;
+  
+    }
+    .nav > .nav-links > ul{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 5px;
+      list-style: none;
+    }
+    .main{
+      margin-top: 2rem;
+      display: block;
+      width: 100%;
+    }
+    .main-body{
+      text-align: center;
+      margin: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .main-body > img{
+      display: none;
+    }
+}
+@media screen and (max-width:480px) {
+    body{
+        background: url(/starter-code/assets/crew/background-crew-tablet.jpg),center top;
+        color: white;
+    }
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav{
+      width: 100%;
+      position: fixed;
+       z-index: 99;
+    }
+    .nav-title{
+      float: left;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: unset;
+    }
+    .nav > .nav-btn > label > span{
+      display: block;
+      width: 26px;
+      height: 10px;
+      border-top: 2px solid #fff;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      overflow-y: hidden;
+      overflow-x: none;
+      top: 50px;
+      left: 0px;
+      display: inline-block;
+      width: 100%;
+      background-color: #323232;
+      height: 0px;
+      transition: all 0.3s ease-in;
+    }
+    .nav > .nav-links > ul{
+      display: inline-block;
+    }
+    .nav > .nav-links > ul li a {
+
+      width: 100%;
+      text-align: center;
+      border-radius: 1.5rem;
+      color: #FFAC41;
+    }
+    .nav > .nav-links > ul li a:hover{
+      color: #FF1E56;
+      background-color: #FFAC41;
+      transition: all ease-in-out 1s;
+    }
+  .nav > .nav-header > .nav-title {
+    float: left;
+  }
+  .nav > .nav-header > .nav-title  > img{
+      width: 2rem;
+      height: 2rem;
+  }
+  a{
+    outline: none;
+  }
+      .nav > .nav-links > ul li{
+        display: inline;
+        margin-bottom: 20px;
+        padding: 0;
+        background-color: unset;
+
+      }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+    .main{
+      margin-top: 2rem;
+      display: block;
+      width: 100%;
+    }
+    .main-body{
+      text-align: center;
+      margin: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  .main-body > .main-body-head{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+  .main-body > .main-body-head > span{
+    color: gray;
+  }
+  .main-body > .main-body-post{
+    color:gray;
+    text-transform: uppercase;
+    margin-top: 5rem;
+    font-size: 25px;
+  }
+  .main-body > .main-body-name{
+    width: 100%;
+    font-size: 45px;
+    text-transform: uppercase;
+  }
+  .main-body > p{
+      width: 100%;
+      margin-top: 1rem;
+  }
+  .main-body > .crew-nav{
+    display: flex;
+    margin-top: 5rem;
+  }
+  .main-body > .crew-nav > a > button{
+    margin-left: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: none;
+    outline: none;
+    background-color: gray;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .main-body > .crew-nav > a > .act{
+    border: 10px solid white;
+  }
+  .main > img{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+  }
