@@ -6,6 +6,7 @@
 body{
     background: url(/starter-code/assets/technology/background-technology-desktop.jpg),center top;
     color: white;
+    background-size: cover;
 }
   .nav {
     height: 50px;
@@ -130,6 +131,11 @@ display: block;
   height: 35%;
 }
 @media screen and (max-width:768px){
+    body{
+        background: url(/starter-code/assets/technology/background-technology-tablet.jpg),center top;
+        color: white;
+        background-size: cover;
+    }
     .nav > .nav-links{
       width: 100%;
       float: none;
@@ -246,8 +252,9 @@ display: block;
 }
 @media screen and (max-width:480px) {
     body{
-        background: url(/starter-code/assets/technology/background-technology-tablet.jpg),center top;
+        background: url(/starter-code/assets/technology/background-technology-mobile.jpg),center top;
         color: white;
+        background-size: cover;
     }
     .nav > .nav-btn {
       display: inline-block;

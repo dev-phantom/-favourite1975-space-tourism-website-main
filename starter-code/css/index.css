@@ -10,6 +10,7 @@
 body{
     background: url(/starter-code/assets/home/background-home-desktop.jpg),center top;
     color: white;
+    background-size: cover;
 }
   .nav {
     height: 50px;
@@ -117,6 +118,7 @@ body{
     body{
       background: url(/starter-code/assets/home/background-home-tablet.jpg),center top;
       color: white;
+      background-size: cover;
   }
   .nav > .nav-links{
     width: 100%;
@@ -193,6 +195,11 @@ display: block;
 
   }
   @media screen and (max-width:480px) {
+    body{
+      background: url(/starter-code/assets/home/background-home-mobile.jpg),center top;
+      color: white;
+      background-size: cover;
+  }
     .nav > .nav-btn {
       display: inline-block;
       position: absolute;
@@ -231,6 +238,7 @@ display: block;
       display: inline-block;
       width: 100%;
       background-color: #062048;
+
       height: 0px;
       transition: all 0.3s ease-in;
     }

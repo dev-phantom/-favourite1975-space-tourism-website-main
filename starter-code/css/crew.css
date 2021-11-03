@@ -6,6 +6,7 @@
 body{
     background: url(/starter-code/assets/crew/background-crew-desktop.jpg),center top;
     color: white;
+    background-size: cover;
 }
   .nav {
     height: 50px;
@@ -130,6 +131,11 @@ body{
     height: 30rem;
   }
 @media screen and (max-width:768px){
+  body{
+    background: url(/starter-code/assets/crew/background-crew-tablet.jpg),center top;
+    color: white;
+    background-size: cover;
+}
     .nav > .nav-links{
       width: 100%;
       float: none;
@@ -199,8 +205,9 @@ body{
 }
 @media screen and (max-width:480px) {
     body{
-        background: url(/starter-code/assets/crew/background-crew-tablet.jpg),center top;
+        background: url(/starter-code/assets/crew/background-crew-mobile.jpg),center top;
         color: white;
+        background-size: cover;
     }
     .nav > .nav-btn {
       display: inline-block;
@@ -239,7 +246,7 @@ body{
       left: 0px;
       display: inline-block;
       width: 100%;
-      background-color: #323232;
+      background-color: #062048;
       height: 0px;
       transition: all 0.3s ease-in;
     }
@@ -251,11 +258,11 @@ body{
       width: 100%;
       text-align: center;
       border-radius: 1.5rem;
-      color: #FFAC41;
+      color: #FFf;
     }
     .nav > .nav-links > ul li a:hover{
-      color: #FF1E56;
-      background-color: #FFAC41;
+      color: #fff;
+
       transition: all ease-in-out 1s;
     }
   .nav > .nav-header > .nav-title {
